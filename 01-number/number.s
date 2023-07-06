@@ -9,7 +9,7 @@ _main:
 	str x29, [sp, #0]		; store the frame pointer (x29) at [sp] (stack pointer)
 	str x30, [sp, #8]		; store the link register (x29) at [sp + 8] (stack pointer)
 
-	mov x0, 7			; move number 3 into register
+	mov x0, 3			; move number 3 into register
 	str x0, [sp, #16]		; store 3 in stack
 
 	ldr x29, [sp, #0]		; load the frame pointer from the stack
