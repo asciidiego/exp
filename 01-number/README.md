@@ -43,4 +43,4 @@ to understand why people called C "portable assembly". It was
 helpful to see how each C statement matched to a few ARM assembly
 instructions and seeing the stack  (or heap if you use `malloc`)
 registers and the memory where they point to change.
-ld -macosx_version_min 13.0 -L /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib number.o -o number -lSystem
+
