@@ -1,0 +1,17 @@
+<html>
+<title>Canvas</title>
+<head>
+  <!-- Include `js/lienzo.js` -->
+  <script type="text/javascript" src="js/lienzo.js"></script>
+</head>
+<body>
+
+<canvas id="canvas" width="480" height="480" style="border:1px solid #000000;">
+
+<script type="text/javascript"> 
+  const canvasElement = document.getElementById('canvas');
+  const canvas = new Lienzo({ canvasElement, width: 480, height: 480 });
+  canvas.add(new Circle({ x: 240, y: 240, radius: 50 }));
+</script>
+</body>
+</html>
