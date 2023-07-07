@@ -67,6 +67,7 @@ class Scene {
 
   add(shape) {
     this.shapes.push(shape);
+    this.draw(this.ctx);
   }
 
   draw(ctx) {
