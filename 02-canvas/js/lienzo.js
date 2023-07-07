@@ -112,10 +112,10 @@ class Lienzo {
     // 2D Canvas API + DOM stuff
     this.canvas = canvasElement;
     this.ctx = this.canvas.getContext("2d");
-    this.width = width * (supersampling ? 2 : 1);
-    this.height = height * (supersampling ? 2 : 1);
-    this.canvas.width = this.width;
-    this.canvas.height = this.height;
+    this.width = width;
+    this.height = height;
+    this.canvas.width = this.width * (supersampling ? 2 : 1);
+    this.canvas.height = this.height * (supersampling ? 2 : 1);
     this.ctx.scale(supersampling ? 2 : 1, supersampling ? 2 : 1);
     this.canvas.style.width = `${width}px`;
     this.canvas.style.height = `${height}px`;
